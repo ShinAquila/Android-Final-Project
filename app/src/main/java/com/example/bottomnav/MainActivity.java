@@ -1,5 +1,9 @@
 package com.example.bottomnav;
 
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -9,11 +13,6 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.WindowManager;
 
 import com.example.bottomnav.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
@@ -45,14 +44,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Use this code if you have custom icons
-        NavigationView navigationView = findViewById(R.id.navigation_view);
-        navigationView.setItemIconTintList(null);
-
-        // Navigation Side Drawer
-        NavController navController = Navigation.findNavController(this, R.id.sideNavHostFragment);
-        NavigationUI.setupWithNavController(navigationView, navController);
-
         // Set up bottom navigation
         binding.bottomNavView.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.Home) {
@@ -64,7 +55,25 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+
+        // Set up side navigation
+        NavigationView navigationView = findViewById(R.id.navigation_view);
+        navigationView.setItemIconTintList(null); // If you have custom icons
+        NavController navController = Navigation.findNavController(this, R.id.sideNavHostFragment);
+        NavigationUI.setupWithNavController(navigationView, navController);
+        navigationView.setNavigationItemSelectedListener(item -> {
+            if (item.getItemId() == R.id.nav_home) {
+                repFragment(new HomeFragment());
+            } else if (item.getItemId() == R.id.nav_profile) {
+                repFragment(new ProfileFragment());
+            } else if (item.getItemId() == R.id.nav_settings) {
+                repFragment(new SettingsFragment());
+            }
+            drawerLayout.closeDrawer(GravityCompat.START); // Close drawer after selection
+            return true;
+        });
     }
+
 
 
     //navigation bottom

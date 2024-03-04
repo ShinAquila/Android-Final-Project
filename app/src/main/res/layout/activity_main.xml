@@ -51,8 +51,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintBottom_toTopOf="@id/bottom_nav_view"
             android:name="androidx.navigation.fragment.NavHostFragment"
-            app:defaultNavHost='true'
-            app:navGraph='@navigation/main'/>
+            app:defaultNavHost='true'/>
 
 
         <FrameLayout

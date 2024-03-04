@@ -4,13 +4,17 @@
     <item
         android:id="@+id/Home"
         android:title="Home"
-        android:icon="@drawable/icons8_home"/>
+        android:icon="@drawable/homeoutline"/>
     <item
         android:id="@+id/Profile"
         android:title="Profile"
-        android:icon="@drawable/person"/>
+        android:icon="@drawable/user"/>
+    <item
+        android:id="@+id/Message"
+        android:title="Message"
+        android:icon="@drawable/annotationoutline"/>
     <item
         android:id="@+id/Settings"
         android:title="Settings"
-        android:icon="@drawable/icons8_settings"/>
+        android:icon="@drawable/cogoutline"/>
 </menu>
