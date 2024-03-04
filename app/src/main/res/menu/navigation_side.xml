@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/homeoutline"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/user"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/nav_msg"
+        android:icon="@drawable/annotationoutline"
+        android:title="Message"/>
+
+    <item
+        android:title="More Options">
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/cogoutline"
+                android:title="Settings"/>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logoutoutline"
+                android:title="Logout"/>
+
+
+        </menu>
+    </item>
+
+
+</menu>
