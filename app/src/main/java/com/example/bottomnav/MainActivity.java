@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 repFragment(new HomeFragment());
             } else if (item.getItemId() == R.id.Profile) {
                 repFragment(new ProfileFragment());
+            } else if (item.getItemId() == R.id.Message) {
+                repFragment(new MessageFragment());
             } else if (item.getItemId() == R.id.Settings) {
                 repFragment(new SettingsFragment());
             }
@@ -66,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
                 repFragment(new HomeFragment());
             } else if (item.getItemId() == R.id.nav_profile) {
                 repFragment(new ProfileFragment());
+            } else if (item.getItemId() == R.id.nav_msg) {
+                repFragment(new MessageFragment());
             } else if (item.getItemId() == R.id.nav_settings) {
                 repFragment(new SettingsFragment());
             }
