@@ -90,22 +90,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return true;
         });
 
-
-        // Click on button next activity code
-//        button = (Button) findViewById(R.id.next_button);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openActivity2();
-//            }
-//        });
     }
 
-    //Next button method
-//    public void openActivity2(){
-//        Intent intent = new Intent(this, Activity2.class);
-//        startActivity(intent);
-//    }
 
     //navigation bottom
     private void repFragment(Fragment fragment){

@@ -10,6 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+import com.example.bottomnav.Activity2;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
@@ -70,12 +75,24 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        button = view.findViewById(R.id.next_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity2();
+            }
+        });
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return view;
     }
 
-//    public void openActivity2(){
-//        Intent intent = new Intent(this, Activity2.class);
-//        startActivity(intent);
-//    }
+    public void openActivity2(){
+        Intent intent = new Intent(getActivity(), Activity2.class);
+        startActivity(intent);
+    }
 }
