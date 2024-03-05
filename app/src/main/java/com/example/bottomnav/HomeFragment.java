@@ -3,6 +3,7 @@ package com.example.bottomnav;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -22,6 +23,7 @@ import com.example.bottomnav.Activity2;
  */
 public class HomeFragment extends Fragment {
     private Button button;
+    public CardView philippines;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,14 +64,6 @@ public class HomeFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        // Click on button next activity code
-//        button = (Button) findViewById(R.id.next_button);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openActivity2();
-//            }
-//        });
     }
 
     @Override
@@ -77,6 +71,37 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+
+
+        CardView philippines = view.findViewById(R.id.philCard);
+        philippines.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openPhilippines();}
+        });
+        CardView france = view.findViewById(R.id.franceCard);
+        france.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openFrance();}
+        });
+        CardView usa = view.findViewById(R.id.usaCard);
+        usa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openUSA();}
+        });
+        CardView england = view.findViewById(R.id.englandCard);
+        england.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openEngland();}
+        });
+        CardView india = view.findViewById(R.id.indiaCard);
+        india.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openIndia();}
+        });
+
+
+
 
         button = view.findViewById(R.id.next_button);
         button.setOnClickListener(new View.OnClickListener() {
@@ -86,13 +111,33 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
         // Inflate the layout for this fragment
         return view;
     }
 
     public void openActivity2(){
         Intent intent = new Intent(getActivity(), Activity2.class);
+        startActivity(intent);
+    }
+
+    public void openPhilippines(){
+        Intent intent = new Intent(getActivity(), Philippines.class);
+        startActivity(intent);
+    }
+    public void openFrance(){
+        Intent intent = new Intent(getActivity(), France.class);
+        startActivity(intent);
+    }
+    public void openUSA(){
+        Intent intent = new Intent(getActivity(), USA.class);
+        startActivity(intent);
+    }
+    public void openEngland(){
+        Intent intent = new Intent(getActivity(), England.class);
+        startActivity(intent);
+    }
+    public void openIndia(){
+        Intent intent = new Intent(getActivity(), India.class);
         startActivity(intent);
     }
 }

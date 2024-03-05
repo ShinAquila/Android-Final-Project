@@ -13,6 +13,21 @@
         android:theme="@style/Theme.BottomNav"
         tools:targetApi="31">
         <activity
+            android:name=".India"
+            android:exported="false" />
+        <activity
+            android:name=".England"
+            android:exported="false" />
+        <activity
+            android:name=".USA"
+            android:exported="false" />
+        <activity
+            android:name=".France"
+            android:exported="false" />
+        <activity
+            android:name=".Philippines"
+            android:exported="false" />
+        <activity
             android:name=".Activity2"
             android:exported="false" />
         <activity
