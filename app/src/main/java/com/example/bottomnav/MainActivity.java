@@ -1,8 +1,10 @@
 package com.example.bottomnav;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -19,7 +21,8 @@ import com.google.android.material.navigation.NavigationView;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+    private Button button;
 
     ActivityMainBinding binding;
 
@@ -86,9 +89,23 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START); // Close drawer after selection
             return true;
         });
+
+
+        // Click on button next activity code
+//        button = (Button) findViewById(R.id.next_button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openActivity2();
+//            }
+//        });
     }
 
-
+    //Next button method
+//    public void openActivity2(){
+//        Intent intent = new Intent(this, Activity2.class);
+//        startActivity(intent);
+//    }
 
     //navigation bottom
     private void repFragment(Fragment fragment){
@@ -96,5 +113,10 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_out,fragment);
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }
