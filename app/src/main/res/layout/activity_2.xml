@@ -6,13 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".Activity2">
 
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="This is the second activity"-->
+<!--        android:textSize="40sp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:layout_gravity="center"/>-->
+    <Button
+        android:id="@+id/back_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is the second activity"
-        android:textSize="40sp"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:text="Back"/>
 
 
 </LinearLayout>
