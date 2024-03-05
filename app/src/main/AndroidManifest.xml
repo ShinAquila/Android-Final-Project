@@ -12,9 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BottomNav"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"/>
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
