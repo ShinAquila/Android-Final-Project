@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         navigationView.setNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_home) {
-                repFragment(new SideHomeFragment());
+                repFragment(new HomeFragment());
             } else if (item.getItemId() == R.id.nav_profile) {
                 repFragment(new SideProfileFragment());
             } else if (item.getItemId() == R.id.nav_msg) {

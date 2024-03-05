@@ -18,9 +18,10 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:padding="6dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="62dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="18dp"
                 android:orientation="vertical">
@@ -32,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text="Vincent Ace Rivera, Student"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
@@ -42,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text="augusto08rivera12@gmail.com"
-                    android:textColor="#454545"
+                    android:textColor="#B3B3B3"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
@@ -52,19 +53,29 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text="09952034951"
-                    android:textColor="#454545"
+                    android:textColor="#B3B3B3"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/pfp"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/rowlet" />
+                <ImageView
+                    android:id="@+id/pfp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/rowlet" />
+            </LinearLayout>
+
+
         </LinearLayout>
 
         <HorizontalScrollView
