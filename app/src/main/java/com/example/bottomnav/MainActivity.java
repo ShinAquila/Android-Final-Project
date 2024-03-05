@@ -16,6 +16,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.bottomnav.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +35,22 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
+
+        // Get the support FragmentManager
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        // Begin the transaction
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        // Create an instance of HomeFragment
+        HomeFragment homeFragment = new HomeFragment();
+
+        // Replace the contents of the FrameLayout with the HomeFragment
+        fragmentTransaction.replace(R.id.frame_out, homeFragment);
+
+        // Commit the transaction
+        fragmentTransaction.commit();
+
 
         // Initialize DrawerLayout after setContentView
         final DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
