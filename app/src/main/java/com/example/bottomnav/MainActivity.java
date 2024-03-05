@@ -36,19 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
 
-        // Get the support FragmentManager
+        // Makes HomeFragment the main layout
         FragmentManager fragmentManager = getSupportFragmentManager();
-
-        // Begin the transaction
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        // Create an instance of HomeFragment
         HomeFragment homeFragment = new HomeFragment();
-
-        // Replace the contents of the FrameLayout with the HomeFragment
         fragmentTransaction.replace(R.id.frame_out, homeFragment);
-
-        // Commit the transaction
         fragmentTransaction.commit();
 
 
