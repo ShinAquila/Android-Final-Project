@@ -65,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
         navigationView.setNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_home) {
-                repFragment(new HomeFragment());
+                repFragment(new SideHomeFragment());
             } else if (item.getItemId() == R.id.nav_profile) {
-                repFragment(new ProfileFragment());
+                repFragment(new SideProfileFragment());
             } else if (item.getItemId() == R.id.nav_msg) {
-                repFragment(new MessageFragment());
+                repFragment(new SideMessageFragment());
             } else if (item.getItemId() == R.id.nav_settings) {
-                repFragment(new SettingsFragment());
+                repFragment(new SideSettingsFragment());
             }
             drawerLayout.closeDrawer(GravityCompat.START); // Close drawer after selection
             return true;
