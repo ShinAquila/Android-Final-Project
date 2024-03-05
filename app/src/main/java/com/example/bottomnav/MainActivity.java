@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         navigationView.setItemIconTintList(null); // If you have custom icons
         NavController navController = Navigation.findNavController(this, R.id.sideNavHostFragment);
         NavigationUI.setupWithNavController(navigationView, navController);
+
         navigationView.setNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_home) {
                 repFragment(new SideHomeFragment());
