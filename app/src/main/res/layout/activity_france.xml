@@ -93,7 +93,7 @@
                     android:padding="5dp"
                     android:layout_marginTop="20dp"
                     android:textStyle="bold"
-                    android:text="Top Places in the Philippines"/>
+                    android:text="Top Places in France"/>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -129,12 +129,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/angeles"/>
+                                        android:src="@drawable/bordeaux"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Angeles City"/>
+                                        android:text="Bordeaux"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -161,12 +161,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/cebu"/>
+                                        android:src="@drawable/nice"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Nice"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -193,12 +193,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/boracay"/>
+                                        android:src="@drawable/marseille"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Marseille"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -225,12 +225,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/puerto"/>
+                                        android:src="@drawable/provence"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Provence"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>

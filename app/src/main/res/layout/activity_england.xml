@@ -56,7 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="London"
+                    android:text="United Kingdom"
                     android:textSize="34sp"
                     android:textStyle="bold"
                     android:layout_marginTop="300dp"
@@ -93,7 +93,7 @@
                     android:padding="5dp"
                     android:layout_marginTop="20dp"
                     android:textStyle="bold"
-                    android:text="Top Places in the Philippines"/>
+                    android:text="Top Places in the United Kingdom"/>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -129,12 +129,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/angeles"/>
+                                        android:src="@drawable/edinburg"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Angeles City"/>
+                                        android:text="Edinburgh"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -161,12 +161,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/cebu"/>
+                                        android:src="@drawable/manchester"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Manchester"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -193,12 +193,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/boracay"/>
+                                        android:src="@drawable/bristol"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Bristol"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -225,12 +225,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/puerto"/>
+                                        android:src="@drawable/glasglow"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Glasglow"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
