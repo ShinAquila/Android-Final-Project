@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:orientation="horizontal"
-            android:background="@color/design_default_color_secondary"
+            android:background="@color/white"
             android:gravity="center_vertical"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
@@ -28,7 +28,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/menu"
-                app:tint="@color/white"/>
+                app:tint="@color/black"/>
         </LinearLayout>
 
         <fragment

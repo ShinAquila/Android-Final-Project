@@ -21,7 +21,7 @@ import com.google.android.material.navigation.NavigationView;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity{
     private Button button;
 
     ActivityMainBinding binding;
@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 repFragment(new ProfileFragment());
             } else if (item.getItemId() == R.id.Message) {
                 repFragment(new MessageFragment());
-            } else if (item.getItemId() == R.id.Settings) {
-                repFragment(new SettingsFragment());
             }
             return true;
         });
@@ -90,7 +88,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             drawerLayout.closeDrawer(GravityCompat.START); // Close drawer after selection
             return true;
         });
-
     }
 
 
@@ -100,10 +97,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_out,fragment);
         fragmentTransaction.commit();
-    }
-
-    @Override
-    public void onClick(View view) {
-
     }
 }

@@ -13,8 +13,4 @@
         android:id="@+id/Message"
         android:title="Message"
         android:icon="@drawable/annotationoutline"/>
-    <item
-        android:id="@+id/Settings"
-        android:title="Settings"
-        android:icon="@drawable/cogoutline"/>
 </menu>
