@@ -2,5 +2,5 @@
     <string name="app_name">The App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="phil_desc">With over 8.2 million tourists visiting the Philippines every year, it has slowly become one of the best travel hotspots for the world. Tourists love to experience the beautiful islands of the Philippines and enjoy its urban lifestyle, delicious cuisine, and fruits, there are some facts that the tourists are still not aware of!</string>
+    <string name="sampleDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra mi ac orci vehicula porttitor ut ac massa. Duis blandit, nisi sed eleifend ultricies, nunc enim tincidunt risus, vitae dictum dolor quam eu dui. Aliquam a egestas nisl. Curabitur bibendum luctus velit in sagittis.</string>
 </resources>
