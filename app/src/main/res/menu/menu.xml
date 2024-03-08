@@ -10,7 +10,7 @@
         android:title="Profile"
         android:icon="@drawable/user"/>
     <item
-        android:id="@+id/Message"
-        android:title="Message"
-        android:icon="@drawable/annotationoutline"/>
+        android:id="@+id/Search"
+        android:title="Search"
+        android:icon="@drawable/search_icon"/>
 </menu>

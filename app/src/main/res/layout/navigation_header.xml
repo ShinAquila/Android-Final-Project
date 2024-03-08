@@ -1,24 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="176dp"
-    android:background="#6CB6EF"
+    android:layout_height="190dp"
+    android:background="#639E9E9E"
     android:gravity="bottom"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:orientation="vertical">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profile"
-        android:paddingTop="10dp"/>
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/rowlet"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Vincent Ace Rivera"
+            android:paddingTop="10dp"/>
+        <TextView
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5E5E5E"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:text="@string/handle"
+            android:paddingTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/following_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:text="442"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5E5E5E"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:text="Following"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/followers_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:text="8"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5E5E5E"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:text="Followers"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
 
 
 </LinearLayout>

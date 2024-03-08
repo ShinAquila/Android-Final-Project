@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment"
+    tools:context=".SearchFragment"
     android:background="#DCDCDC">
 
     <LinearLayout
@@ -15,73 +15,40 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:padding="20dp">
 
-            <LinearLayout
-                android:padding="6dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:orientation="vertical">
-
-
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:text="Vincent Ace Rivera"
-                    android:textColor="@color/black"
-                    android:textSize="28dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:text="My List"
-                    android:textColor="#505050"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:orientation="vertical">
+                android:backgroundTint="#B3B3B3"
+                app:cardCornerRadius="20dp">
 
-                <ImageView
-                    android:id="@+id/pfp"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/rowlet" />
-            </LinearLayout>
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:textSize="20sp"
+                    android:text="Search"/>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_height="1dp"
+            android:background="#C8C8C8">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:text="Favorite Places"/>
         </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:text="Places for you"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -91,12 +58,12 @@
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="16dp"
                 android:columnCount="2">
 
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="#FF914D"
-                    android:id="@+id/philCard"
+                    android:backgroundTint="#E6404E"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -115,7 +82,7 @@
                             android:layout_width="200dp"
                             android:layout_height="130dp"
                             android:layout_gravity="bottom"
-                            android:src="@drawable/phil_logo" />
+                            android:src="@drawable/germany_landmark" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -128,7 +95,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center"
-                                android:text="Philippines"
+                                android:text="Germany"
                                 android:textColor="@color/white"
                                 android:textSize="28sp"
                                 android:textStyle="bold" />
@@ -137,7 +104,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center"
-                                android:text="Metro Manila"
+                                android:text="Berlin"
                                 android:textColor="@color/white"
                                 android:textSize="20sp"/>
 
@@ -148,8 +115,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="#E44A7E"
-                    android:id="@+id/franceCard"
+                    android:backgroundTint="#E648AD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -158,7 +124,162 @@
                     android:layout_margin="12dp"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="16dp">
-                    
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/sokor_landmark" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="South Korea"
+                                android:textColor="@color/white"
+                                android:textSize="28sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Seoul"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#FF5722"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/canada_landmark" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Canada"
+                                android:textColor="@color/white"
+                                android:textSize="28sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Ottawa"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#673AB7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/spain_landmark" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Spain"
+                                android:textColor="@color/white"
+                                android:textSize="28sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Madrid"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#009688"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="16dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
@@ -168,7 +289,7 @@
                             android:layout_width="200dp"
                             android:layout_height="130dp"
                             android:layout_gravity="bottom"
-                            android:src="@drawable/france_logo" />
+                            android:src="@drawable/japan_landmark" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -181,7 +302,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center"
-                                android:text="France"
+                                android:text="Japan"
                                 android:textColor="@color/white"
                                 android:textSize="28sp"
                                 android:textStyle="bold" />
@@ -190,166 +311,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center"
-                                android:text="Paris"
-                                android:textColor="@color/white"
-                                android:textSize="20sp"/>
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:backgroundTint="#F76A59"
-                    android:id="@+id/usaCard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnSpan="2"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="140dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
-                            android:layout_gravity="bottom"
-                            android:src="@drawable/usa_logo" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="USA"
-                                android:textColor="@color/white"
-                                android:textSize="28sp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="New York"
-                                android:textColor="@color/white"
-                                android:textSize="20sp"/>
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:backgroundTint="#2DAEA2"
-                    android:id="@+id/englandCard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnSpan="2"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="140dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
-                            android:layout_gravity="bottom"
-                            android:src="@drawable/uk_logo" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="UK"
-                                android:textColor="@color/white"
-                                android:textSize="28sp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="London"
-                                android:textColor="@color/white"
-                                android:textSize="20sp"/>
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:backgroundTint="#30A437"
-                    android:id="@+id/indiaCard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnSpan="2"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="140dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="160dp"
-                            android:layout_gravity="bottom"
-                            android:src="@drawable/india_logo" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="India"
-                                android:textColor="@color/white"
-                                android:textSize="28sp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="Agra"
+                                android:text="Tokyo"
                                 android:textColor="@color/white"
                                 android:textSize="20sp"/>
 
@@ -360,46 +322,12 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:layout_rowWeight="1"
-                    android:layout_columnSpan="2"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-                        <Button
-                            android:id="@+id/next_button"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:textColor="@color/black"
-                            android:backgroundTint="@color/white"
-                            style="?android:attr/borderlessButtonStyle"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:text="Next"></Button>
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
 
 
             </GridLayout>
         </ScrollView>
 
     </LinearLayout>
-
 
 
 

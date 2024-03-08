@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity{
                 repFragment(new HomeFragment());
             } else if (item.getItemId() == R.id.Profile) {
                 repFragment(new ProfileFragment());
-            } else if (item.getItemId() == R.id.Message) {
-                repFragment(new MessageFragment());
+            } else if (item.getItemId() == R.id.Search) {
+                repFragment(new SearchFragment());
             }
             return true;
         });

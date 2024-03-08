@@ -2,5 +2,6 @@
     <string name="app_name">The App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="handle">@v.ace.rivera</string>
     <string name="sampleDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra mi ac orci vehicula porttitor ut ac massa. Duis blandit, nisi sed eleifend ultricies, nunc enim tincidunt risus, vitae dictum dolor quam eu dui. Aliquam a egestas nisl. Curabitur bibendum luctus velit in sagittis.</string>
 </resources>
