@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity{
             if (item.getItemId() == R.id.nav_home) {
                 repFragment(new HomeFragment());
             } else if (item.getItemId() == R.id.nav_profile) {
-                repFragment(new SideProfileFragment());
+                repFragment(new ProfileFragment());
             } else if (item.getItemId() == R.id.nav_msg) {
                 repFragment(new SideMessageFragment());
             } else if (item.getItemId() == R.id.nav_settings) {
