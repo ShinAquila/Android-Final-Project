@@ -65,7 +65,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#F3F3F3">
+                    android:backgroundTint="#F3F3F3"
+                    app:cardElevation="0dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -104,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:alignmentMode="alignMargins"
-                        android:padding="5dp"
+                        android:padding="1dp"
                         android:rowCount="1"
                         android:rowOrderPreserved="true">
 

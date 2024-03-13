@@ -21,7 +21,7 @@
                 android:padding="6dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="14dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="18dp"
                 android:orientation="vertical">
@@ -34,7 +34,7 @@
                     android:layout_margin="5dp"
                     android:text="Vincent Ace Rivera"
                     android:textColor="@color/black"
-                    android:textSize="28dp"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -130,7 +130,7 @@
                                 android:gravity="center"
                                 android:text="Philippines"
                                 android:textColor="@color/white"
-                                android:textSize="28sp"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -139,7 +139,7 @@
                                 android:gravity="center"
                                 android:text="Metro Manila"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -183,7 +183,7 @@
                                 android:gravity="center"
                                 android:text="France"
                                 android:textColor="@color/white"
-                                android:textSize="28sp"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                                 android:gravity="center"
                                 android:text="Paris"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -236,7 +236,7 @@
                                 android:gravity="center"
                                 android:text="USA"
                                 android:textColor="@color/white"
-                                android:textSize="28sp"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -245,7 +245,7 @@
                                 android:gravity="center"
                                 android:text="New York"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -289,7 +289,7 @@
                                 android:gravity="center"
                                 android:text="UK"
                                 android:textColor="@color/white"
-                                android:textSize="28sp"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -298,7 +298,7 @@
                                 android:gravity="center"
                                 android:text="London"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -342,7 +342,7 @@
                                 android:gravity="center"
                                 android:text="India"
                                 android:textColor="@color/white"
-                                android:textSize="28sp"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -351,7 +351,7 @@
                                 android:gravity="center"
                                 android:text="Agra"
                                 android:textColor="@color/white"
-                                android:textSize="20sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
