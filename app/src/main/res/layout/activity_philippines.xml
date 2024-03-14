@@ -65,7 +65,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#F3F3F3"
+                    android:backgroundTint="#4AF3F3F3"
                     app:cardElevation="0dp">
 
                     <LinearLayout

@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardElevation="0dp"
-                    android:backgroundTint="#F3F3F3">
+                    android:backgroundTint="#4AF3F3F3">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                     android:padding="5dp"
                     android:layout_marginTop="20dp"
                     android:textStyle="bold"
-                    android:text="Top Places in the Philippines"/>
+                    android:text="Top Places in India"/>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -129,12 +129,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/angeles"/>
+                                        android:src="@drawable/mumbai"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Angeles City"/>
+                                        android:text="Mumbai"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -161,12 +161,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/cebu"/>
+                                        android:src="@drawable/new_delhi"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="New Delhi"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -193,12 +193,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/boracay"/>
+                                        android:src="@drawable/kolkata"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Kolkata"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
@@ -225,12 +225,12 @@
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="64dp"
-                                        android:src="@drawable/puerto"/>
+                                        android:src="@drawable/varanasi"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:text="Cebu City"/>
+                                        android:text="Varanasi"/>
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>

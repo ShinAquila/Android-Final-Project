@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardElevation="0dp"
-                    android:backgroundTint="#F3F3F3">
+                    android:backgroundTint="#4AF3F3F3">
 
                     <LinearLayout
                         android:layout_width="match_parent"
