@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCDCDC"
     android:orientation="vertical"
-    android:padding="26dp"
     tools:context=".Activity2">
 
-    <ImageView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="240dp"
-        android:src="@drawable/place"/>
+        android:layout_gravity="center"
+        android:background="@drawable/world"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#DCDCDC"
         android:text="Back"/>
 
 

@@ -360,39 +360,16 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textColor="@color/black"
                     android:backgroundTint="@color/white"
-                    android:layout_rowWeight="1"
-                    android:layout_columnSpan="2"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-                        <Button
-                            android:id="@+id/next_button"
-                            android:layout_width="match_parent"
-                            android:layout_height="48dp"
-                            android:textColor="@color/black"
-                            android:backgroundTint="@color/white"
-                            style="?android:attr/borderlessButtonStyle"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:text="Read More"/>
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
+                    android:layout_margin="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Read More"/>
 
 
             </GridLayout>
