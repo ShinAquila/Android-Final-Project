@@ -381,13 +381,13 @@
                         <Button
                             android:id="@+id/next_button"
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="48dp"
                             android:textColor="@color/black"
                             android:backgroundTint="@color/white"
                             style="?android:attr/borderlessButtonStyle"
-                            android:textSize="20sp"
+                            android:textSize="16sp"
                             android:textStyle="bold"
-                            android:text="Next"></Button>
+                            android:text="Read More"/>
 
                     </LinearLayout>
 

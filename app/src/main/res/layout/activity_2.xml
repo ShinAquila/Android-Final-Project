@@ -4,21 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical"
+    android:padding="26dp"
     tools:context=".Activity2">
 
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="This is the second activity"-->
-<!--        android:textSize="40sp"-->
-<!--        android:gravity="center_horizontal"-->
-<!--        android:layout_gravity="center"/>-->
-    <Button
-        android:id="@+id/back_button"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/place"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Unforgettable experience"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:textSize="20dp"
+        android:padding="16dp"
+        android:text="@string/desc"/>
+
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
         android:text="Back"/>
+
+
 
 
 </LinearLayout>

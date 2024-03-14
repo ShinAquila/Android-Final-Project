@@ -3,5 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="handle">@v.ace.rivera</string>
+
+    <string name="desc">Immerse yourself in a vibrant cultural tapestry! Explore ancient ruins shrouded in mystery, where playful creatures swing through the lush canopy overhead. Discover the secrets behind a beloved local beverage, learning the art of brewing the perfect cup. A captivating adventure awaits – answer the call and explore a world unlike any other!</string>
     <string name="sampleDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra mi ac orci vehicula porttitor ut ac massa. Duis blandit, nisi sed eleifend ultricies, nunc enim tincidunt risus.</string>
 </resources>

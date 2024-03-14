@@ -1,18 +1,17 @@
 package com.example.bottomnav;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.fragment.NavHostFragment;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class Philippines extends AppCompatActivity {
 
-    private Button button;
+    private LinearLayout button;
 
 
     @Override
@@ -23,7 +22,7 @@ public class Philippines extends AppCompatActivity {
         setContentView(R.layout.activity_philippines);
 
 
-        button = (Button) findViewById(R.id.fromPhil_goBack);
+        button = (android.widget.LinearLayout) findViewById(R.id.fromPhil_goBack);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){openMainActivity();}
