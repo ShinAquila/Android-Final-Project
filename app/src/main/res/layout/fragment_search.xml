@@ -79,7 +79,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="200dp"
+                            android:layout_width="180dp"
                             android:layout_height="130dp"
                             android:layout_gravity="bottom"
                             android:src="@drawable/germany_landmark" />
@@ -131,8 +131,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="200dp"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
                             android:layout_gravity="bottom"
                             android:src="@drawable/sokor_landmark" />
 
@@ -182,8 +182,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="200dp"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
                             android:layout_gravity="bottom"
                             android:src="@drawable/canada_landmark" />
 
@@ -234,7 +234,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="200dp"
+                            android:layout_width="180dp"
                             android:layout_height="130dp"
                             android:layout_gravity="bottom"
                             android:src="@drawable/spain_landmark" />
@@ -286,7 +286,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="200dp"
+                            android:layout_width="180dp"
                             android:layout_height="130dp"
                             android:layout_gravity="bottom"
                             android:src="@drawable/japan_landmark" />
