@@ -37,12 +37,12 @@ public class Activity2 extends AppCompatActivity {
 
 
         //PUSH NOTIF
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.0){
-//            NotificationChannel channel = new NotificationChannel("myCh", "My Channel", NotificationManager.IMPORTANCE_DEFAULT);
-//
-//            NotificationManager manager = getSystemService(NotificationManager.class);
-//            manager.createNotificationChannel(channel);
-//        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel("myCh", "My Channel", NotificationManager.IMPORTANCE_DEFAULT);
+
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
 
         //Design of push notif
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "myCh")

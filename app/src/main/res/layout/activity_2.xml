@@ -44,8 +44,18 @@
         android:layout_gravity="center"
         android:textColor="@color/black"
         android:backgroundTint="#DCDCDC"
-        android:text="Test"
+        android:text="Toast"
         android:onClick="triggerToastTest"/>
+
+    <Button
+        android:id="@+id/push_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="#DCDCDC"
+        android:text="Push Notif"
+        android:onClick="notif"/>
 
 
 
