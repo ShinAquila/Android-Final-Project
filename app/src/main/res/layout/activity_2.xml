@@ -37,6 +37,16 @@
         android:backgroundTint="#DCDCDC"
         android:text="Back"/>
 
+    <Button
+        android:id="@+id/toast_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="#DCDCDC"
+        android:text="Test"
+        android:onClick="triggerToastTest"/>
+
 
 
 

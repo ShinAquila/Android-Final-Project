@@ -72,8 +72,6 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
-
         CardView philippines = view.findViewById(R.id.philCard);
         philippines.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,8 +97,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {openIndia();}
         });
-
-
 
 
         button = view.findViewById(R.id.next_button);
