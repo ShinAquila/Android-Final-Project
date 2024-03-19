@@ -18,16 +18,17 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/msg1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="#CACACA"
+                android:backgroundTint="#CACACA"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="55dp"
@@ -82,17 +83,19 @@
 
 
 
-            </LinearLayout>
-            <LinearLayout
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/msg2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:background="#CACACA"
+                android:backgroundTint="#CACACA"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="55dp"
@@ -115,17 +118,17 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="5dp"
-                                android:text="Aleks Lee"/>
+                                android:text="Bruce Lee"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
-                                android:text="@alekslee"/>
+                                android:text="@brucelee"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
-                                android:text="Mar 10"/>
+                                android:text="Mar 08"/>
                         </LinearLayout>
 
 
@@ -133,7 +136,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Oh why hello there"/>
+                            android:text="BRUH"/>
 
 
 
@@ -147,17 +150,19 @@
 
 
 
-            </LinearLayout>
-            <LinearLayout
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/msg3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:background="#CACACA"
+                android:backgroundTint="#CACACA"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="55dp"
@@ -180,17 +185,17 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="5dp"
-                                android:text="Aleks Lee"/>
+                                android:text="Rick Astley"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
-                                android:text="@alekslee"/>
+                                android:text="@rickastley"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
-                                android:text="Mar 10"/>
+                                android:text="Mar 08"/>
                         </LinearLayout>
 
 
@@ -198,7 +203,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Oh why hello there"/>
+                            android:text="Never gonna give you up"/>
 
 
 
@@ -212,17 +217,19 @@
 
 
 
-            </LinearLayout>
-            <LinearLayout
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/msg4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:background="#CACACA"
+                android:backgroundTint="#CACACA"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="55dp"
@@ -245,17 +252,17 @@
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
                                 android:padding="5dp"
-                                android:text="Aleks Lee"/>
+                                android:text="Lee Norris"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
-                                android:text="@alekslee"/>
+                                android:text="@leenorris"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="5dp"
-                                android:text="Mar 10"/>
+                                android:text="Mar 05"/>
                         </LinearLayout>
 
 
@@ -263,7 +270,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Oh why hello there"/>
+                            android:text="but why though"/>
 
 
 
@@ -277,7 +284,7 @@
 
 
 
-            </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
@@ -290,11 +297,29 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" >
 
-            <Button
-                android:id="@+id/create"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_toEndOf="@+id/parent"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/create"
+                        android:onClick="pushNotifMSG"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edit"
+                        android:layout_toEndOf="@+id/parent"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

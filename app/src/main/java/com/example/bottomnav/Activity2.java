@@ -67,4 +67,5 @@ public class Activity2 extends AppCompatActivity {
         notificationManagerCompat.notify(1, notification);
     }
 
+
 }
